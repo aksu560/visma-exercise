@@ -74,7 +74,7 @@ class FinnishHolidayPlanner(HolidayPlanner):
         # Check if national holidays fall within the holiday. We exclude sundays, as we count those separately.
         for holiday in self.national_holidays_list:
             if (self.start_date <= holiday <= self.end_date and holiday.weekday() != 6):
-                self.nati += 1
+                self.national_holidays += 1
 
         # Remove sundays from the required days.
         sunday_fraction = divmod(self.duration.days, 7)
