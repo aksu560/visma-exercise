@@ -24,7 +24,6 @@ national_holidays_list = [
 
 class TestHolidayPlanner(unittest.TestCase):
 
-
     def test_holiday_length(self):
         holiday = HolidayPlanner.HolidayPlanner("2021-02-01", "2021-02-15", national_holidays_list)
         res = HolidayPlanner.HolidayDictionarySerializer.serialize(holiday)
